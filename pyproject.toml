@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=63.2.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-hilbert-transform"
+version = "0.1.0"
+description = "Reference implementation for the quantum Hilbert transform."
+authors = [{ name = "Henry Zhang" }, { name = "Joseph Li" }]
+readme = "README.md"
+license = { text = "MIT" }
+urls = ["https://github.com/henryzhng/quantum-hilbert-transform"]
+requires-python = ">=3.10.0,<4.0.0"
+dependencies = [
+    "matplotlib>=3.10.0",
+    "numpy<=2.1.1,>=2.0.0",
+    "pandas==2.3.1",
+    "Pillow==11.3.0",
+    "qiskit==2.0.1",
+    "qiskit_aer==0.17.1",
+]
