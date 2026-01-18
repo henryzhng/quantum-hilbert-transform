@@ -1,27 +1,24 @@
-# Quantum Hilbert Transform
+## Quantum Hilbert Transform
 
 This repository accompanies the paper
 
-> Zhang, H., Li, J. **“Efficient Quantum Circuits for the Hilbert Transform”**, _Journal_, 2025. DOI: [10.0000/placeholder](https://doi.org/10.0000/placeholder)
+H. Zhang and J. Li, “Efficient Quantum Circuits for the Hilbert Transform,” IEEE Signal Processing Letters, 2026, doi: [10.1109/LSP.2026.3654893](https://doi.org/10.1109/LSP.2026.3654893)
 
 and contains:
 
-1. A Qiskit implementation of the quantum Hilbert transform in `src/qht.py`
-2. Scripts to reproduce the figures and benchmarks from the paper in `src/experiments/`
+1. Qiskit implementations of the quantum Hilbert transform in `src/qht.py`;
+2. Scripts to reproduce the figures and benchmarks from the paper in `src/experiments`.
 
 ## Usage
 
-(Requires Python 3.10.0 or higher, packages listed in `pyproject.toml`).
-
-Clone the repository locally:
-
+With Python ≥ 3.10, clone the repository:
 ```bash
 git clone https://github.com/henryzhng/quantum-hilbert-transform.git
 cd quantum-hilbert-transform
 pip install -e .
 ```
 
-Then, replicate the experiments (Figs. 2–4) by running:
+Then reproduce the experiments (Figs. 2 to 4) by running:
 
 ```bash
 python src/experiments/a.py
@@ -29,22 +26,22 @@ python src/experiments/b.py
 python src/experiments/c.py
 ```
 
-Or, for information on the quantum circuits used, refer to the `BuildQHT, CircuitInfo` classes in `src/qht.py`.
+Or, for information on the quantum circuits used, refer to functions in `src/qht.py`. There are both dynamic and static circuit implementations.
 
 ## Citation
     
 If you use this work, please cite:
 
-```
-@article{Zhang2025QHT,
-    title={Efficient Quantum Circuits for the Hilbert Transform},
-    author={Henry Zhang and Joseph Li},
-    journal={Journal},
-    volume={},
-    pages={},
-    year={2025},
-    doi={10.0000/placeholder}
+```bibtex
+@article{Zhang2026,
+  title = {Efficient Quantum Circuits for the Hilbert Transform},
+  ISSN = {1558-2361},
+  DOI = {10.1109/LSP.2026.3654893},
+  journal = {IEEE Signal Processing Letters},
+  author = {Zhang, Henry and Li, Joseph},
+  year = {2026},
+  pages = {1–5}
 }
 ```
 
-This project is licensed under the [MIT License](LICENSE).
+The code is licensed under the [MIT License](LICENSE).
